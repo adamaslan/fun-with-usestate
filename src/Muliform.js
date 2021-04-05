@@ -13,7 +13,9 @@ const MultiForm = (props) => {
     <div className="">
       <p>{props.formSections[currentFormSectionIndex].title}</p>
       {props.formSections[currentFormSectionIndex].formFields.map(() => {
-        return (
+        return <input type={field.type} id={field.label} name={field.label} />;
+
+return (
           <div>
             <button onClick={onHandlePreviousSection}>Back</button>
             <button onClick={onHandleNextSection}>Next</button>
