@@ -4,6 +4,7 @@ import Flexcont from "./Flexcont";
 import Flexdivb from "./Flexdivb";
 import Flexdivc from "./Flexdivc";
 import FlexHead from "./FlexHead";
+import "./index.css";
 
 const formSections = [
   {
@@ -124,17 +125,35 @@ const formSections = [
       },
     ],
   },
+  {
+    id: "Weight",
+    title: "Enter Package Weight",
+    onSubmit: () => {
+      // post request
+    },
+    formFields: [
+      {
+        label: "Weight",
+        type: "string",
+        validation: (input) => {
+          if (!input) {
+            return "Zip Code is required";
+          }
+          return null;
+        },
+      },
+    ],
+  },
 ];
 
 function App() {
   return (
     <Flexcont>
       <FlexHead>Wizard</FlexHead>
-      <Flexdivc>1</Flexdivc>
+
       <Flexa>
         <MultiForm formSections={formSections} />
       </Flexa>
-      <Flexdivb>3</Flexdivb>
     </Flexcont>
   );
 }

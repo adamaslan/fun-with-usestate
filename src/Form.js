@@ -8,7 +8,7 @@ const formSections = [
     onSubmit: () => {
       // post request
     },
-    formFields: [
+    formFields class="": [
       {
         label: "name",
         type: "string",
@@ -117,6 +117,25 @@ const formSections = [
           return null;
         },
       },
+    ],
+  },
+  {
+    title: "Enter Package Weight",
+    onSubmit: () => {
+      // post request
+    },
+    formFields: [
+      {
+        label: "Weight(Pounds)",
+        type: "number",
+        validation: (input) => {
+          if (!input) {
+            return "Weight is required";
+          }
+          return null;
+        },
+      },
+      
     ],
   },
 ];

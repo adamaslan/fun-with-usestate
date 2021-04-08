@@ -7,9 +7,10 @@ export default styled.div`
 
   flex: 3 0px;
   min-width: 30vh;
+  max-width: 30%;
   height: 100vh;
   background-color: red;
-  border: 10px solid palevioletred;
+  border: 5px solid palevioletred;
   border-radius: 5px;
   padding: 5px;
   justify-content: center;

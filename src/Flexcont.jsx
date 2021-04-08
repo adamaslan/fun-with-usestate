@@ -13,8 +13,8 @@ export default styled.div`
   justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
-  border: 10px solid goldenrod;
-  background-color: powderblue;
+  border: 7px solid pink;
+  background-color: magenta;
 
   border-radius: 5px;
   padding: 5px;
