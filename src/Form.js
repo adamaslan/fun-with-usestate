@@ -1,5 +1,5 @@
 import React from "react";
-import MultiForm from "./Muliform";
+import MultiForm from "./Multiform";
 
 const formSections = [
   {

@@ -1,7 +1,9 @@
-import react from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import MultiForm from "./Muliform";
+import MultiForm from "./Multiform";
+import Flexa from "./Flexa";
+import Flexcont from "./Flexcont";
+import Flexdivb from "./Flexdivb";
+import Flexdivc from "./Flexdivc";
+import FlexHead from "./FlexHead";
 
 const formSections = [
   {
@@ -125,7 +127,16 @@ const formSections = [
 ];
 
 function App() {
-  return <MultiForm formSections={formSections} />;
+  return (
+    <Flexcont>
+      <FlexHead>Wizard</FlexHead>
+      <Flexdivc>1</Flexdivc>
+      <Flexa>
+        <MultiForm formSections={formSections} />
+      </Flexa>
+      <Flexdivb>3</Flexdivb>
+    </Flexcont>
+  );
 }
 
 export default App;
