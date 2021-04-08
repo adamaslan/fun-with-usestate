@@ -134,7 +134,7 @@ function App() {
       <Flexa>
         <MultiForm formSections={formSections} />
       </Flexa>
-      <Flexdivb>3</Flexdivb>
+      <Flexdivb></Flexdivb>
     </Flexcont>
   );
 }
